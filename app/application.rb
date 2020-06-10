@@ -6,11 +6,13 @@ class Application
     resp = Rack::Response.new
     time = Time.now.hour
     if time["time"].to_i <= 12
-       " Good Morning!"
+      resp.write " Good Morning!"
       
     else
       puts "Good Afternoon!"
     end 
+    
+    resp.
   end 
   
 end 
