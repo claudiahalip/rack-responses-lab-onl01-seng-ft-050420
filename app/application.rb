@@ -2,7 +2,7 @@ require 'pry'
 
 class Application 
   
-  def call(time)
+  def call(env)
     if time["time"].to_i <= 12
       puts " Good Morning!"
       
